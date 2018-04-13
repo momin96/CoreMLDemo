@@ -35,6 +35,8 @@ class ViewController: UIViewController {
         
         previewLayer = AVCaptureVideoPreviewLayer(session: session)
         previewView.layer.addSublayer(previewLayer)
+        
+        let cameraInput = try AVCaptureDeviceInput(device: camera)
     
     }
 
